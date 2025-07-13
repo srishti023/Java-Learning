@@ -10,7 +10,6 @@ public class bubble_sort {
     {
         for(int i=0 ; i<arr.length ; i++)
         {
-            int start = i;
             boolean swapped = false;
             for(int j=1 ; j<arr.length-i ; j++)
             {
