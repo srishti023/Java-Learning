@@ -1,2 +1,4 @@
-
-
+(str.equals(""))
+        // {
+        //     return true;
+        // }
