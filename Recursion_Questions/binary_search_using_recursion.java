@@ -1,8 +1,7 @@
-package Recursion_Questions;
 public class binary_search_using_recursion {
     public static void main(String[] args) {
         int []arr = {1,2,4,6,8,10,12,14,15,17,20};
-        System.out.println(bs_rec(arr, 0, arr.length-1, 0));
+        System.out.println(bs_rec(arr, 0, arr.length-1, 12));
     }
     static int bs_rec(int []arr,int start, int end,int target)
     {
