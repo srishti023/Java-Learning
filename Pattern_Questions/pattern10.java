@@ -12,34 +12,15 @@ public class pattern10 {
     }
     static void patternn10(int n)
     {
-        for(int i=1 ; i<=n ; i++)
-        {
-            //for space
-            for(int j=1 ; j<=n-i ; j++)
-            {
-                    System.out.print(" ");
+        for (int i = 0; i < n; i++) {
+            // Leading spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
             }
-            for(int j=n-i+1 ; j<=n+i; j++)
-            {
-                if(i%2!=0)
-                {
-                    if(j%2!=0)
-                    {
-                        System.out.print("*");
-                    }
-                    else{
-                        System.out.print(" ");
-                    }
-                }
-                else{
-                    if(j%2==0)
-                    {
-                        System.out.print("*");
-                    }
-                    else{
-                        System.out.print(" ");
-                    }
-                }
+            // Stars
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+                if (j < i) System.out.print(" ");
             }
             System.out.println();
         }
