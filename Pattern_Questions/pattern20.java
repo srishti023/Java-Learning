@@ -1,3 +1,11 @@
+// PATTERN :
+
+// ****
+// *  *
+// *  *
+// *  *
+// ****
+
 public class pattern20 {
     public static void main(String[] args) {
         patternn20(5,4);
