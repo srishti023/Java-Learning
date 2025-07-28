@@ -2,8 +2,9 @@ import java.util.ArrayList;
 
 public class linear_search {
     public static void main(String[] args) {
-        int []arr = {1,4,2,6,7};
-        System.out.println(linearSearch(arr, 7, 0));
+        int []arr = {1,7,4,2,7,6,7,7};
+        ArrayList <Integer> arl = new ArrayList<>();
+        System.out.println(linear_search(arr, 7, 0, arl));
     }
     static int linearSearch(int []arr, int n, int index)
     {
@@ -29,6 +30,6 @@ public class linear_search {
         {
             list.add(index);
         }
-        linear_search(arr, n, index+1, list);
+        return linear_search(arr, n, index+1, list);
     }
 }
